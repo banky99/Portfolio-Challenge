@@ -118,7 +118,7 @@ nav ul li a:hover {
     padding: 60px 20px;
     margin: 40px auto;
     max-width: 1200px;
-    background-color: #c9a7ba; /* Warm light beige background */
+    background-color: #312f80; /* Warm light beige background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-out;
@@ -204,7 +204,7 @@ form button:hover {
 }
 
 .social-links a {
-    color: #007bff;
+    color: #fcf6f6;
     margin: 0 15px;
     text-decoration: none;
     font-size: 18px;
@@ -255,14 +255,15 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
+    display: none;
+    background-color: #333;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.back-to-top.show {
+    display: block;
 }
 
 .back-to-top:hover {
@@ -372,3 +373,104 @@ h2 {
         opacity: 0.5;
     }
 }
+ /* Section Background image*/
+ /* About Section */
+#about {
+    background-image: url('about.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white; /* Adjust text color if needed */
+}
+
+/* Skills Section */
+#skills {
+    background-image: url('skills.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Educational Background Section */
+#education {
+    background-image: url('education.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Interests Section */
+#interests {
+    background-image: url('interests.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Case Studies Section */
+#projects {
+    background-image: url('projects.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+}
+/* Overlay for readability - Applies to other sections except the #hero */
+.section:not(#hero)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Keep it behind the content */
+}
+
+/* Style for white text in form inputs and labels */
+#contactForm label,
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    color: white;
+}
+
+/* White placeholder text */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* White with slight transparency */
+}
+
+/* Input and textarea background and border */
+#contactForm input,
+#contactForm textarea {
+    background-color: transparent; /* Transparent background */
+    border: 1px solid white;       /* White border */
+    color: white;                  /* White text */
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;                   /* Ensure the fields are full-width */
+    box-sizing: border-box;         /* Ensure padding doesn't affect width */
+}
+
+/* Button styling */
+#contactForm button {
+    background-color: white; /* White background for button */
+    color: black;            /* Black text on button */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #ccc;  /* Slight hover effect for button */
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+
+
