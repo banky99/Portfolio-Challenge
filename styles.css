@@ -1,0 +1,333 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('background.png');
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between; /* Logo on the left, nav in center, and calendly on right */
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* Navigation styling */
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Calendar link aligned to the right */
+.calendar-link {
+    flex: 1;
+    text-align: right;
+    margin-left: auto; /* Pushes the calendar link to the right */
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.calendar-link:hover {
+    background-color: #333;
+    color: #ffcc00; /* Reverse color on hover */
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 150px 20px;
+}
+
+#hero h1, #hero p {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    background-color: #f9f5e6; /* Warm light beige background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    color: #eb0d0d;
+    margin-bottom: 20px;
+}
+
+.case-study {
+    margin-bottom: 20px;
+}
+
+.case-study h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.case-study p {
+    font-size: 18px;
+}
+
+.case-study a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.case-study a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center; /* Centers the social links horizontally */
+    margin-top: 20px; /* Adds some space above the social links */
+}
+
+.social-links a {
+    color: #007bff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    transform: rotate(360deg); /* Rotate effect on hover */
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner-hidden {
+    display: none; /* Hide the spinner */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .calendar-link {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 40px 10px;
+        margin: 20px;
+    }
+}
+
+/* Initial Animation Keyframes: Slide Up and Fade In */
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Continuous Breathing Effect Keyframes */
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the initial animation to h2 elements */
+h2 {
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly lower */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+/* Class that triggers the initial slideUpFadeIn animation */
+.animate {
+    animation: slideUpFadeIn 0.8s ease forwards; /* Play the slideUpFadeIn animation */
+    opacity: 1; /* Ensure it's visible after animation */
+}
+
+/* Class that triggers the continuous breathing effect */
+.breathe {
+    animation: breathe 5s ease-in-out infinite; /* Apply the continuous breathing effect after initial animation */
+}
