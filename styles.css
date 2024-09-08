@@ -69,16 +69,18 @@ nav ul li a:hover {
 /* Calendar link aligned to the right */
 .calendar-link {
     flex: 1;
-    text-align: right;
-    margin-left: auto; /* Pushes the calendar link to the right */
-    background-color: #333;
+	text-align: right;
+	margin-left: auto;
+    position: relative; /* Required for the pseudo-elements */
     color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+	font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease; /* Smooth transition */
+    background-color: #333;
+    overflow: hidden; /* Hide overflowing elements */
+	transition: all 0.3s ease; /* Smooth transition */
 }
 
 .calendar-link:hover {
@@ -116,7 +118,7 @@ nav ul li a:hover {
     padding: 60px 20px;
     margin: 40px auto;
     max-width: 1200px;
-    background-color: #f9f5e6; /* Warm light beige background */
+    background-color: #c9a7ba; /* Warm light beige background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-out;
@@ -330,4 +332,43 @@ h2 {
 /* Class that triggers the continuous breathing effect */
 .breathe {
     animation: breathe 5s ease-in-out infinite; /* Apply the continuous breathing effect after initial animation */
+}
+
+
+
+/* Glowing effect */
+.calendar-link::before {
+    content: ''; /* Empty content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: glow 2s infinite; /* Apply animation */
+}
+
+/* Ensure text is above the glowing effect */
+.calendar-link span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Keyframes for the glowing animation */
+@keyframes glow {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+    }
 }
