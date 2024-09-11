@@ -7,11 +7,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
     background-image: url('background.png');
-    scroll-behavior: smooth; /* Smooth scrolling */
+    color: #333;
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -23,19 +22,14 @@ header {
     padding: 10px 20px;
     z-index: 100;
     display: flex;
-    justify-content: space-between; /* Logo on the left, nav in center, and calendly on right */
+    justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    flex: 1;
 }
 
 .logo img {
     height: 60px;
 }
 
-/* Navigation styling */
 nav {
     flex: 2;
     display: flex;
@@ -45,8 +39,6 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
@@ -60,57 +52,46 @@ nav ul li a {
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-/* Hover effect for navigation links */
 nav ul li a:hover {
-    color: #ffcc00; /* Change color on hover */
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Calendar link aligned to the right */
-.calendar-link {
-    flex: 1;
-	text-align: right;
-	margin-left: auto;
-    position: relative; /* Required for the pseudo-elements */
-    color: white;
-    text-decoration: none; /* Remove underline */
-    font-size: 18px;
-	font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #333;
-    overflow: hidden; /* Hide overflowing elements */
-	transition: all 0.3s ease; /* Smooth transition */
-}
-
-.calendar-link:hover {
-    background-color: #333;
-    color: #ffcc00; /* Reverse color on hover */
+    color: #ffcc00;
     text-decoration: underline;
 }
 
+.calendar-link {
+    color: black; /* Text color */
+    background-color: #00ffff; /* Aqua blue background */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow padding and margin to be applied */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.calendar-link:hover {
+    background-color: #00cccc; /* Darker aqua blue on hover */
+}
+
+
 /* Hero Section */
 #hero {
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
     padding: 150px 20px;
 }
 
-#hero h1, #hero p {
-    animation: slideIn 1s ease-out;
+#hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+#hero p {
+    font-size: 24px;
 }
 
 /* Section Styles */
@@ -118,24 +99,13 @@ nav ul li a:hover {
     padding: 60px 20px;
     margin: 40px auto;
     max-width: 1200px;
-    background-color: #312f80; /* Warm light beige background */
+    background-color: #312f80;
+    color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-h1, h2 {
+h2 {
     text-align: center;
     color: #eb0d0d;
     margin-bottom: 20px;
@@ -147,7 +117,6 @@ h1, h2 {
 
 .case-study h3 {
     font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .case-study p {
@@ -199,8 +168,8 @@ form button:hover {
 /* Social Links */
 .social-links {
     display: flex;
-    justify-content: center; /* Centers the social links horizontally */
-    margin-top: 20px; /* Adds some space above the social links */
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .social-links a {
@@ -212,42 +181,8 @@ form button:hover {
 }
 
 .social-links a:hover {
+    transform: rotate(360deg);
     text-decoration: underline;
-    transform: rotate(360deg); /* Rotate effect on hover */
-}
-
-/* Loading Spinner */
-.spinner {
-    border: 5px solid #f3f3f3; /* Light grey */
-    border-top: 5px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.spinner-hidden {
-    display: none; /* Hide the spinner */
-}
-
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
 }
 
 /* Back to Top Button */
@@ -255,19 +190,25 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
     background-color: #333;
     color: white;
     padding: 10px;
     border-radius: 50%;
-    cursor: pointer;
-}
-.back-to-top.show {
     display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .back-to-top:hover {
     background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Responsive Design */
@@ -275,10 +216,6 @@ footer {
     nav ul {
         flex-direction: column;
         align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
     }
 
     .calendar-link {
@@ -291,186 +228,35 @@ footer {
         margin: 20px;
     }
 }
-
-/* Initial Animation Keyframes: Slide Up and Fade In */
-@keyframes slideUpFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.breathe {
+    animation: breathe 4s ease-in-out infinite;
 }
 
-/* Continuous Breathing Effect Keyframes */
 @keyframes breathe {
     0% {
         transform: scale(1);
+        opacity: 1;
     }
     50% {
         transform: scale(1.05);
+        opacity: 0.7;
     }
     100% {
         transform: scale(1);
-    }
-}
-
-/* Apply the initial animation to h2 elements */
-h2 {
-    opacity: 0; /* Start hidden */
-    transform: translateY(30px); /* Start slightly lower */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-}
-
-/* Class that triggers the initial slideUpFadeIn animation */
-.animate {
-    animation: slideUpFadeIn 0.8s ease forwards; /* Play the slideUpFadeIn animation */
-    opacity: 1; /* Ensure it's visible after animation */
-}
-
-/* Class that triggers the continuous breathing effect */
-.breathe {
-    animation: breathe 5s ease-in-out infinite; /* Apply the continuous breathing effect after initial animation */
-}
-
-
-
-/* Glowing effect */
-.calendar-link::before {
-    content: ''; /* Empty content */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 80%);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    animation: glow 2s infinite; /* Apply animation */
-}
-
-/* Ensure text is above the glowing effect */
-.calendar-link span {
-    position: relative;
-    z-index: 1;
-}
-
-/* Keyframes for the glowing animation */
-@keyframes glow {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.2);
         opacity: 1;
     }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.5;
-    }
-}
- /* Section Background image*/
- /* About Section */
-#about {
-    background-image: url('about.png');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: white; /* Adjust text color if needed */
 }
 
-/* Skills Section */
-#skills {
-    background-image: url('skills.png');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: white;
+.cv-download {
+    color: black; /* Text color */
+    background-color: #00ffff; /* Aqua blue background */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow padding and margin to be applied */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
-/* Educational Background Section */
-#education {
-    background-image: url('education.png');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: white;
+.cv-download:hover {
+    background-color: #00cccc; /* Darker aqua blue on hover */
 }
-
-/* Interests Section */
-#interests {
-    background-image: url('interests.png');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: white;
-}
-
-/* Case Studies Section */
-#projects {
-    background-image: url('projects.png');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    color: white;
-}
-/* Overlay for readability - Applies to other sections except the #hero */
-.section:not(#hero)::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; /* Keep it behind the content */
-}
-
-/* Style for white text in form inputs and labels */
-#contactForm label,
-#contactForm input,
-#contactForm textarea,
-#contactForm button {
-    color: white;
-}
-
-/* White placeholder text */
-#contactForm input::placeholder,
-#contactForm textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* White with slight transparency */
-}
-
-/* Input and textarea background and border */
-#contactForm input,
-#contactForm textarea {
-    background-color: transparent; /* Transparent background */
-    border: 1px solid white;       /* White border */
-    color: white;                  /* White text */
-    padding: 10px;
-    margin-bottom: 15px;
-    width: 100%;                   /* Ensure the fields are full-width */
-    box-sizing: border-box;         /* Ensure padding doesn't affect width */
-}
-
-/* Button styling */
-#contactForm button {
-    background-color: white; /* White background for button */
-    color: black;            /* Black text on button */
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-#contactForm button:hover {
-    background-color: #ccc;  /* Slight hover effect for button */
-}
-
-h3 {
-    text-decoration: underline;
-}
-
-
-
