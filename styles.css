@@ -107,7 +107,7 @@ nav ul li a:hover {
 
 h2 {
     text-align: center;
-    color: #eb0d0d;
+    color: #1de23e;
     margin-bottom: 20px;
 }
 
@@ -124,7 +124,7 @@ h2 {
 }
 
 .case-study a {
-    color: #007bff;
+    color: black;
     text-decoration: none;
 }
 
@@ -247,7 +247,7 @@ footer {
     }
 }
 
-.cv-download {
+.download {
     color: black; /* Text color */
     background-color: #00ffff; /* Aqua blue background */
     padding: 10px 20px; /* Add padding for better appearance */
