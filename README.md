@@ -63,26 +63,25 @@ Below is an outline of the key features and sections of the website.
 3. You can customize the content by editing the HTML and CSS files.
 
 # Technologies Used
- **HTML**
- **CSS**
+ **HTML & CSS**
 
 
 Structure and Layout:
-Clear Sectioning: The code effectively uses sections (section) with appropriate IDs (#about, #skills, #education, #projects, #contact) to organize the content.
+**Clear Sectioning:** The code effectively uses sections (section) with appropriate IDs (#about, #skills, #education, #projects, #contact) to organize the content.
 
-Semantic HTML: The use of semantic elements like header, nav, main, and footer enhances the structure and readability of the code.
+**Semantic HTML:** The use of semantic elements like header, nav, main, and footer enhances the structure and readability of the code.
 
-Normalization: The * { margin: 0; padding: 0; box-sizing: border-box; } rule ensures consistent styling across elements.
+**Normalization:** The  { margin: 0; padding: 0; box-sizing: border-box; } rule ensures consistent styling across elements.
 
-Positioning: The navbar is positioned fixed at the top of the page, ensuring it remains visible while scrolling.
+**Positioning:** The navbar is positioned fixed at the top of the page, ensuring it remains visible while scrolling.
 
-Layout: Flexbox is used to create a flexible layout for the navbar, with the logo on the left and the navigation menu on the right.
+**Layout:** Flexbox is used to create a flexible layout for the navbar, with the logo on the left and the navigation menu on the right.
 
-Styling: The navbar has a background color and padding, and the navigation links are styled with appropriate colors and hover effects.
+**Styling:** The navbar has a background color and padding, and the navigation links are styled with appropriate colors and hover effects.
 
-Background: A background image is applied to the hero section, covering the entire viewport.
+**Background:** A background image is applied to the hero section, covering the entire viewport.
 Back to Top Button: The button is styled with a circular shape and a hover effect.
 
-Footer: The footer has a background color and text color, providing a consistent bottom section.
+**Footer:** The footer has a background color and text color, providing a consistent bottom section.
 
-Responsive Design: Media queries are used to adjust the layout and styling for different screen sizes, ensuring the website is responsive.
+**Responsive Design:** Media queries are used to adjust the layout and styling for different screen sizes, ensuring the website is responsive.
