@@ -58,13 +58,13 @@ nav ul li a:hover {
 }
 
 .calendar-link {
-    color: black; /* Text color */
-    background-color: #00ffff; /* Aqua blue background */
-    padding: 10px 20px; /* Add padding for better appearance */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Allow padding and margin to be applied */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    color: black; 
+    background-color: #00ffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
 }
 
 .calendar-link:hover {
@@ -248,15 +248,15 @@ footer {
 }
 
 .download {
-    color: black; /* Text color */
-    background-color: #00ffff; /* Aqua blue background */
-    padding: 10px 20px; /* Add padding for better appearance */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Allow padding and margin to be applied */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    color: black; 
+    background-color: #00ffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
 }
 
 .cv-download:hover {
-    background-color: #00cccc; /* Darker aqua blue on hover */
+    background-color: #00cccc; 
 }
