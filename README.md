@@ -1,12 +1,9 @@
 # PortfolioChallenge
 
-Here's a simple and clear README file for GitHub outlining the key features of the website described by the HTML code:
-
-
-
 # Portfolio Website
 
-Welcome to my portfolio website! This repository contains the HTML, CSS, and other assets used to create my personal portfolio. Below is an outline of the key features and sections of the website.
+Welcome to my portfolio website! This repository contains the HTML and CSS used to create my personal portfolio. Hosted on Github page: https://banky99.github.io/Portfolio-Challenge/
+Below is an outline of the key features and sections of the website.
 
 # Features
 
@@ -14,7 +11,7 @@ Welcome to my portfolio website! This repository contains the HTML, CSS, and oth
  The website is designed to be responsive and mobilefriendly, adapting to different screen sizes using media queries.
 
 # 2. **Hero Section**
- A welcoming section with a tagline and location information. It showcases my professional identity with a personal message: "Designing through the night to bring wise ideas to light.",  with a direct link to my location.
+ A welcoming section with a tagline and location information. It showcases my professional identity with a personal message: "Designing through the night to bring wise ideas to light.",  
 
 # 3. **About Me**
  A brief overview of my experience as an ERP and CRM consultant, highlighting my expertise in Sage ERP, QuickBooks, and Zoho, as well as my technical skills in SQL, Linux, DevOps, and generative AI tools.
@@ -28,7 +25,7 @@ Welcome to my portfolio website! This repository contains the HTML, CSS, and oth
    SQL, Linux & DevOps
 
 # 5. **Educational Background**
- A description of my academic qualifications (B.Sc. in Computer Science) and certifications in DevOps, AI tools, CRM management, and system administration, with link to my CV saved on google drive.
+ A description of my academic qualifications (B.Sc. in Computer Science) and certifications in DevOps, AI tools, CRM management, and system administration, 
 
 # 6. **Projects**
  A showcase of my notable projects, including:
@@ -52,6 +49,12 @@ Welcome to my portfolio website! This repository contains the HTML, CSS, and oth
 
 # 11. **Footer**
     A footer displaying the current year and a personal caption: "Designing through the night to bring wise ideas to light."
+
+ # 9. **Google Map Integration**
+    A link to my current loaction  via Google Map.
+
+# 9. **Google drive Integration**
+    A link to my CV  via Google drive.
 
 # How to Use
 
